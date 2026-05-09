@@ -2,23 +2,24 @@
 
 const LINKS = {
 
-    leave: "https://example.com/leave",
-
-    dayoff: "https://example.com/dayoff",
-
-    overtime: "https://example.com/overtime",
-
-    outing: "https://example.com/outing",
-
-    province: "https://example.com/province",
-
-    xintong: "https://example.com/xintong"
+    //请假登记
+    leave: "https://f.kdocs.cn/g/36UjdJ7f",
+    //调休登记
+    dayoff: "https://f.kdocs.cn/g/36UjdJ7f",
+    //加班登记
+    overtime: "https://f.kdocs.cn/g/36UjdJ7f",
+    //外出登记
+    outing: "https://f.kdocs.cn/g/36UjdJ7f",
+    //省公司登记
+    province: "http://221.207.18.198:18088/?company_id=233",
+    //信通公司登记(海湖)
+    xintong: "http://visitor.zhhqznly.cn:18088/?company_id=241"
 };
 
 
 /* 页面加载 */
 
-window.onload = function(){
+window.onload = function () {
 
     document.getElementById('leaveLink').href = LINKS.leave;
 
@@ -36,7 +37,7 @@ window.onload = function(){
 
 /* 折叠 */
 
-function toggleSection(el){
+function toggleSection(el) {
 
     const links = el.nextElementSibling;
 
@@ -46,7 +47,7 @@ function toggleSection(el){
 
 /* 日期密码 */
 
-function getTodayPassword(){
+function getTodayPassword() {
 
     const d = new Date();
 
@@ -56,9 +57,9 @@ function getTodayPassword(){
 
     let day = d.getDate();
 
-    m = m < 10 ? '0'+m : m;
+    m = m < 10 ? '0' + m : m;
 
-    day = day < 10 ? '0'+day : day;
+    day = day < 10 ? '0' + day : day;
 
     return `${y}${m}${day}`;
 }
@@ -66,13 +67,13 @@ function getTodayPassword(){
 
 /* 登录 */
 
-function checkPassword(){
+function checkPassword() {
 
     const val = document
         .getElementById('passwordInput')
         .value;
 
-    if(val === getTodayPassword()){
+    if (val === getTodayPassword()) {
 
         document
             .getElementById('loginBox')
@@ -82,7 +83,7 @@ function checkPassword(){
             .getElementById('mainContent')
             .style.display = 'block';
 
-    }else{
+    } else {
 
         alert('密码错误');
     }
