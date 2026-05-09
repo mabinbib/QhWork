@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#07111f;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#fff;
+    padding:20px;
+}
+
+#loginBox{
+    position:fixed;
+    inset:0;
+    background:#07111f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.login-panel{
+    width:90%;
+    max-width:360px;
+    background:rgba(20,35,60,0.95);
+    border-radius:18px;
+    padding:30px;
+}
+
+.login-title{
+    text-align:center;
+    font-size:24px;
+    color:#4fc3ff;
+    margin-bottom:12px;
+}
+
+.login-desc{
+    text-align:center;
+    color:#8ca6c0;
+    margin-bottom:25px;
+}
+
+.login-input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#0f2238;
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#1d8fff;
+    color:#fff;
+}
+
+#mainContent{
+    display:none;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    color:#4fc3ff;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#8ca6c0;
+}
+
+.section{
+    margin-bottom:18px;
+    border-radius:16px;
+    overflow:hidden;
+    background:rgba(20,35,60,0.9);
+}
+
+.section-title{
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+}
+
+.links{
+    padding:0 15px 15px;
+    display:none;
+}
+
+.links.show{
+    display:block;
+}
+
+.card{
+    display:block;
+    background:#102844;
+    border-radius:14px;
+    padding:16px;
+    margin-top:12px;
+    text-decoration:none;
+    color:#fff;
+}
+
+.card-title{
+    color:#4fc3ff;
+    margin-bottom:6px;
+}
