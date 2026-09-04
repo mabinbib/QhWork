@@ -11,7 +11,7 @@ const LINKS = {
     //外出登记
     outing: "https://f.kdocs.cn/g/36UjdJ7f",
     //省公司登记
-    province: "https://visitor.zhhqznly.cn:18088/?company_id=233",
+    province: "https://zhhqznly.qh.sgcc.com.cn:18088/?code=BBGWSOV2MYIS",
     //信通公司登记(海湖)
     xintong: "http://visitor.zhhqznly.cn:18088/?company_id=241"
 };
